@@ -9,9 +9,20 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#344054",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['var(--font-nunito)'],
+      },
+      width:{
+        s: "20%",
+        m: "30%",
+        l: "40%",
+        xl: "50%",
+        xxl:"80%"
+      }
     },
   },
   plugins: [],
