@@ -1,5 +1,6 @@
 
 import ContentSide from "@/components/Home/ContentSide";
+import ImageContentSide from "@/components/Home/ImageContentSide";
 import SideBar from "@/components/Home/SideBar";
 import { sideBarData, BreadcrumbData } from "@/data"
 
@@ -10,7 +11,7 @@ export default function Home() {
     <section className="w-full flex justify-between gap-8 md:gap-20 flex-grow">
       <SideBar list={sideBarData} />
       <ContentSide list={BreadcrumbData} />
-      <div className="w-m">s</div>
+      <ImageContentSide/>
     </section>
   );
 }
