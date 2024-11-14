@@ -11,7 +11,7 @@ const SideBar = ({ list }: TProps) => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 p-6 flex flex-col gap-6">
+    <aside className="w-64 py-6 flex flex-col gap-6">
       {list.map((item) => {
         const path = `/${item.toLowerCase()}`;
         const isActive = pathname === path;
