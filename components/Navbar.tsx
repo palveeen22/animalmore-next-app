@@ -58,31 +58,30 @@ const Navbar = () => {
               <IconButton
                 icon="/assets/icons/fav.svg"
                 alt="Favorites"
-                width={29}
-                height={29}
-                className="transition-opacity hover:opacity-80 cursor-pointer"
+                width={24}
+                height={24}
+                className="transition-opacity hover:opacity-80 cursor-pointer text-gray-500"
               />
               <IconButton
                 icon="/assets/icons/cart.svg"
                 alt="Cart"
-                width={28}
-                height={28}
-                className="transition-opacity hover:opacity-80 cursor-pointer"
+                width={24}
+                height={24}
+                className="transition-opacity hover:opacity-80 cursor-pointer text-gray-500"
               />
-              <div className='flex items-center gap-x-2 cursor-pointer'>
-                <Image
-                  src={navProfile?.profile}
-                  alt={`${navProfile?.name} account - Animalmore`}
-                  width={40}
-                  height={40}
-                  className="rounded-xl object-cover"
-                />
+              <div className='flex items-center gap-x-3 cursor-pointer'>
+                <div className="relative w-10 h-10">
+                  <Image
+                    src={navProfile?.profile}
+                    alt={`${navProfile?.name} account - Animalmore`}
+                    fill
+                    className="rounded-2xl object-cover"
+                  />
+                </div>
                 <p className='font-medium text-[16px] leading-[25.6px] text-primary'>{navProfile?.name}</p>
               </div>
-            </div>
+              </div>
           </div>
-
-
         </section>
       </nav>
 
