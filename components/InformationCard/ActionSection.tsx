@@ -29,6 +29,8 @@ interface ActionSectionProps {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             alt={alt}
+            width={24}
+            height={24}
           />
           <CircleElement count={data}/>
         </div>

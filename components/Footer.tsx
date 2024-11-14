@@ -5,7 +5,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className='py-6'>
-      <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-6'>
+      <hr className="border-t border-[#C8C8C8] my-6" />
+      <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pt-4'>
         {/* Copyright and Links */}
         <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-20'>
           {/* First two items are copyright text */}
