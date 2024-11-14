@@ -13,7 +13,6 @@ import { images } from '@/data';
 const ImageContentSide = () => {
   return (
     <div className="relative w-full md:w-m mx-auto">
-      {/* Custom Navigation Arrows */}
      <button className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer hover:bg-white/80 transition-colors swiper-button-prev">
       <svg 
         width="15" 
@@ -31,7 +30,6 @@ const ImageContentSide = () => {
       </svg>
     </button>
 
-    {/* Button Next (Kanan) */}
     <button className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer hover:bg-white/80 transition-colors swiper-button-next">
       <svg 
         width="15" 

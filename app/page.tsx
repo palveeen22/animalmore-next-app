@@ -8,7 +8,7 @@ import { sideBarData, BreadcrumbData, headerBarData } from "@/data"
 export default function Home() {
 
   return (
-    <section className="flex flex-col justify-between gap-8 w-full h-full">
+    <section className="flex flex-col justify-between gap-2 md:gap-8 w-full h-full">
       <section className="w-full flex-col">
       <HeaderBar items={headerBarData} />
       </section>

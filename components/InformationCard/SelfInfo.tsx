@@ -19,11 +19,11 @@ const SelfInfo = ({status, experience, profession}: SelfInfo) => {
               className="transition-colors duration-200"
             />
             <div className='flex flex-col justify-start gap-1'>
-              <p className='font-medium text-[24.97px] leading-[24.97px] text-primary'>{status}</p>
+              <p className='font-medium text-md md:text-[24.97px] leading-[24.97px] text-primary'>{status}</p>
               <span className='flex items-center gap-x-2'>
-                <p className='font-medium text-[16px] leading-[16px] text-primary'>{experience}</p>
+                <p className='font-medium text-sm md:text-[16px] leading-[16px] text-primary'>{experience}</p>
                 <span className='text-primary'>,</span>
-                <p className='font-medium text-[16px] leading-[16px] text-primary'>{profession}</p>
+                <p className='font-medium text-sm md:text-[16px] leading-[16px] text-primary'>{profession}</p>
               </span>
             </div>
           </div>

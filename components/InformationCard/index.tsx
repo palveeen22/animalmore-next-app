@@ -27,7 +27,7 @@ const InformationCard = ({ data }: TProps) => {
           />
 
           {/* Right side */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 md:gap-6">
             <LocationInfo
               country={information.country}
               location={information.location}
@@ -57,7 +57,7 @@ const InformationCard = ({ data }: TProps) => {
           </div>
         </div>
       ))}
-      <GradientButton className="w-[257px] h-[45px] mx-auto">
+      <GradientButton className="w-[257px] h-[45px] mx-auto md:mx-0">
         Связаться с заводчиком
       </GradientButton>
       <Note text={NoteAlert} />

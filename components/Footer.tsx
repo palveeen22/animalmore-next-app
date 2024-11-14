@@ -10,13 +10,13 @@ const Footer = () => {
         {/* Copyright and Links */}
         <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-20'>
           {/* First two items are copyright text */}
-          <div className='flex flex-col text-primary text-[16px] leading-5 font-normal'>
+          <div className='flex flex-col text-primary text-sm md:text-[16px] leading-5 font-normal'>
             <span>{footerData[0]}</span>
             <span>{footerData[1]}</span>
           </div>
           
           {/* Remaining items are links */}
-          <div className='grid grid-cols-2 gap-x-8 gap-y-3 text-[16px] leading-5 font-normal'>
+          <div className='grid grid-cols-2 gap-x-8 gap-y-3 text-sm md:text-[16px] leading-5 font-normal'>
             {footerData.slice(2).map((item, index) => (
               <a 
                 key={index} 
