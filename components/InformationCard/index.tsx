@@ -8,12 +8,16 @@ import SelfInfo from "./SelfInfo";
 import GradientButton from "../Button";
 import { NoteAlert } from "@/data";
 
-type TProps = {
-  data: TInformationItem[];
-};
+type THoverState = {
+  index: number;
+  type: 'fav' | 'comment';
+} | null;
 
-const InformationCard = ({ data }: TProps) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+const InformationCard = ({ data }: { data: TInformationItem[] }) => {
+  const [hoveredState, setHoveredState] = useState<THoverState>(null);
+
+  const isHovered = (index: number, type: 'fav' | 'comment') => 
+    hoveredState?.index === index && hoveredState.type === type;
 
   return (
     <div className="flex flex-col gap-4">
@@ -38,9 +42,9 @@ const InformationCard = ({ data }: TProps) => {
               <ActionSection
                 icon="/assets/icons/fav.svg"
                 alt="Add to favorites"
-                isHovered={hoveredIndex === index}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                isHovered={isHovered(index, 'fav')}
+                onMouseEnter={() => setHoveredState({ index, type: 'fav' })}
+                onMouseLeave={() => setHoveredState(null)}
                 note={information?.isSubscribed && <Note text="Вы подписаны" />}
                 data={information?.likes}
               />
@@ -48,9 +52,9 @@ const InformationCard = ({ data }: TProps) => {
               <ActionSection
                 icon="/assets/icons/comment.svg"
                 alt="Add comment"
-                isHovered={hoveredIndex === index}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                isHovered={isHovered(index, 'comment')}
+                onMouseEnter={() => setHoveredState({ index, type: 'comment' })}
+                onMouseLeave={() => setHoveredState(null)}
                 data={information?.comments}
               />
             </div>
