@@ -75,7 +75,7 @@ const Navbar = () => {
                   alt={`${navProfile?.name} account - Animalmore`}
                   width={40}
                   height={40}
-                  className="rounded-[13px] object-cover"
+                  className="rounded-xl object-cover"
                 />
                 <p className='font-medium text-[16px] leading-[25.6px] text-primary'>{navProfile?.name}</p>
               </div>
