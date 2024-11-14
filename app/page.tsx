@@ -2,7 +2,7 @@ import HeaderBar from "@/components/HeaderBar";
 import ContentSide from "@/components/Home/ContentSide";
 import ImageContentSide from "@/components/Home/ImageContentSide";
 import SideBar from "@/components/Home/SideBar";
-import { sideBarData, BreadcrumbData, headerBarData } from "@/data"
+import { menuItems, BreadcrumbData, headerBarData } from "@/data"
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <HeaderBar items={headerBarData} />
       </section>
       <section className="w-full flex flex-col md:flex-row justify-between gap-8 md:gap-20 flex-grow">
-        <SideBar list={sideBarData} />
+        <SideBar list={menuItems} />
         <ContentSide list={BreadcrumbData} />
         <ImageContentSide />
       </section>

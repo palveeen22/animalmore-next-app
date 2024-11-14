@@ -1,5 +1,14 @@
 const headerBarData = ["Собаки", "Кошки", "Другие животные",  "Стримы",  "Сервисы", "Материалы", "Зоотовары"]
-const sideBarData = ["Заводчик", "Питомцы", "Пометы", "Блоги", "Вопросы", "Выставки", "Отзывы"]
+const menuItems = [
+    { name: "Заводчик" },
+    { name: "Питомцы" },
+    { name: "Пометы" },
+    { name: "Блоги" },
+    { name: "Вопросы" },
+    { name: "Выставки" },
+    { name: "Отзывы", count: 5 }
+  ];
+  
 const BreadcrumbData = ["Главная", "Заводчики", "Марина Гриндер"]
 const navProfile = {
     name:"Инесса",
@@ -31,4 +40,4 @@ const images = [
   ];
 
 
-export { sideBarData, BreadcrumbData, TextParagraph, informationData, NoteAlert, footerData, headerBarData, navProfile, images }
+export { menuItems, BreadcrumbData, TextParagraph, informationData, NoteAlert, footerData, headerBarData, navProfile, images }
