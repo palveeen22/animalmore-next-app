@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunito.variable} font-sans`}>
       <body>
-        <main className='mx-auto flex min-h-screen flex-col flex-wrap gap-8 py-4 md:gap-16 px-12'>
+        <main className='mx-auto flex min-h-screen flex-col flex-wrap gap-8 py-4 md:gap-16 px-6 md:px-12'>
           <Navbar />
           {children}
           <Footer />

@@ -6,7 +6,7 @@ type TProp = {
 
 const Note = ({text}: TProp) => {
   return (
-    <h3 className='font-medium text-primary leading-[12px] text-[12px]'>
+    <h3 className='font-medium text-center md:text-left text-primary leading-[12px] text-[12px]'>
         {text}
     </h3>
   )

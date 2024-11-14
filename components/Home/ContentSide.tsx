@@ -11,7 +11,7 @@ type TProps = {
 
 const ContentSide = ({list}: TProps) => {
   return (
-    <div className="w-l flex flex-col justify-start gap-8">
+    <div className="w-full md:w-l flex flex-col justify-start gap-2 md:gap-8">
         <Title text="Марина Гриндер"/>
         <Breadcrumb items={list}/>
         <Paragraph text={TextParagraph}/>

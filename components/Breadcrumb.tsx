@@ -7,7 +7,7 @@ type BreadcrumbProps = {
 
 const Breadcrumb = ({ items }: BreadcrumbProps) => {
   return (
-    <nav className="font-nunito text-[18px] font-normal leading-[22.5px]">
+    <nav className="font-nunito text-sm md:text-[18px] font-normal leading-[22.5px]">
     {items.map((item, index) => (
       <Fragment key={index}>
         <Link

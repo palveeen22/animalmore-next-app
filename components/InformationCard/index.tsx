@@ -18,7 +18,7 @@ const InformationCard = ({ data }: TProps) => {
   return (
     <div className="flex flex-col gap-4">
       {data?.map((information, index) => (
-        <div key={index} className="flex justify-between items-center">
+        <div key={index} className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
           {/* Left side */}
           <SelfInfo
             status={information?.status}
@@ -57,7 +57,7 @@ const InformationCard = ({ data }: TProps) => {
           </div>
         </div>
       ))}
-      <GradientButton className="w-[257px] h-[45px]">
+      <GradientButton className="w-[257px] h-[45px] mx-auto">
         Связаться с заводчиком
       </GradientButton>
       <Note text={NoteAlert} />
